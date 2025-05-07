@@ -33,12 +33,12 @@ Primeiro você deve criar seu arquivo de variável ambiente `.env` na pasta do p
 Exemplo:
 
 ```cl
-PORT=                // 3000
-NODE_ENV=            // "production"
-DATABASE_URL=        // "file:./database.db"
-CSRF_SECRET=         //
-JWT_SECRET_KEY=      //
-JWT_SECRET_REFRESH=  //
+PORT=3000
+NODE_ENV="production"
+DATABASE_URL="file:./database.db"
+CSRF_SECRET="secret1"
+JWT_SECRET_KEY="secret2"
+JWT_SECRET_REFRESH="secret3"
 ```
 
 `CSRF_SECRET`, `JWT_SECRET_KEY`, `JWT_SECRET_REFRESH` são chaves secretas sensíveis, ninguém além de você deve ter acesso a elas, para garantir a segurança do painel recomendo que utilizem este comando para gerar chaves privadas:
